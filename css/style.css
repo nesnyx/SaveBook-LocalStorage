@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+header {
+    background: transparent;
+    padding: 16px;
+    color: white;
+    font-size: 1rem;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    margin: 16px 10px;
+    background: wheat;
+    padding: 12px;
+    flex-grow: 1;
+
+}
+.container h2 {
+    text-align: center;
+}
+
+form {
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: column;
+  height: 200px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-submit {
+    border-radius: 30px;
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    color: black;
+    font-size: 20px;
+    font-weight: 50;
+    margin-top: auto;
+    align-self: center;
+    transition: 0.5s;
+    
+}
+
+.btn-submit:hover {
+  background: #042b58;
+  color: white;
+  border-radius: 10px;
+  
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.deleted-button {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: url('../assets/trash.png');
+  background-size: cover;
+  background-position: center;
+  margin-left: 16px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.check-button {
+  width: 40px;
+  height: 40px;
+background-size: cover;
+  background-position: center;
+  background: url('../assets/check.png');
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  text-decoration: none; 
+}
+
+.back-button {
+  width: 40px;
+  height: 40px;
+
+  background: url('../assets/rotate.png');
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.item {
+  border-radius: 12px;
+  margin-top: 20px;
+  margin: 20px auto;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section {
+      margin: 0;
+  }
+
+  .section .container {
+      width: 100%;
+      padding: 0;
+  }
+
+  .list-item {
+      width: 50%;
+  }
+
+  .item {
+    width: 100%;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+    
+  }
+
+  .form {
+      width: 100%;
+  }
+  h1 {
+      text-align: center;
+  }
+
+  .back-button {
+    width: 20px;
+    height: 20px;
+  }
+  .check-button {
+    width: 20px;
+    height: 20px;
+  }
+  .deleted-button {
+    width: 20px;
+    height: 20px;
+  }
+}
